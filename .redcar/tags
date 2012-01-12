@@ -1,4 +1,4 @@
-1326387061
+1326387805
 Application	/home/jamie/Dropbox/Rails/Tutorial/config/application.rb	  class Application 
 ApplicationController	/home/jamie/Dropbox/Rails/Tutorial/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/jamie/Dropbox/Rails/Tutorial/app/helpers/application_helper.rb	module ApplicationHelper
