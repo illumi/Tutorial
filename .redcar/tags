@@ -1,10 +1,11 @@
-1326385820
+1326387061
 Application	/home/jamie/Dropbox/Rails/Tutorial/config/application.rb	  class Application 
 ApplicationController	/home/jamie/Dropbox/Rails/Tutorial/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/jamie/Dropbox/Rails/Tutorial/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	/home/jamie/Dropbox/Rails/Tutorial/test/performance/browsing_test.rb	class BrowsingTest 
 CreateSubjects	/home/jamie/Dropbox/Rails/Tutorial/db/migrate/20120112144854_create_subjects.rb	class CreateSubjects 
 CreateTutorials	/home/jamie/Dropbox/Rails/Tutorial/db/migrate/20120112144835_create_tutorials.rb	class CreateTutorials 
+DeviseCreateUsers	/home/jamie/Dropbox/Rails/Tutorial/db/migrate/20120112163122_devise_create_users.rb	class DeviseCreateUsers 
 Dissertation	/home/jamie/Dropbox/Rails/Tutorial/config/application.rb	module Dissertation
 Subject	/home/jamie/Dropbox/Rails/Tutorial/app/models/subject.rb	class Subject 
 SubjectTest	/home/jamie/Dropbox/Rails/Tutorial/test/unit/subject_test.rb	class SubjectTest 
@@ -19,12 +20,15 @@ TutorialsController	/home/jamie/Dropbox/Rails/Tutorial/app/controllers/tutorials
 TutorialsControllerTest	/home/jamie/Dropbox/Rails/Tutorial/test/functional/tutorials_controller_test.rb	class TutorialsControllerTest 
 TutorialsHelper	/home/jamie/Dropbox/Rails/Tutorial/app/helpers/tutorials_helper.rb	module TutorialsHelper
 TutorialsHelperTest	/home/jamie/Dropbox/Rails/Tutorial/test/unit/helpers/tutorials_helper_test.rb	class TutorialsHelperTest 
+User	/home/jamie/Dropbox/Rails/Tutorial/app/models/user.rb	class User 
+UserTest	/home/jamie/Dropbox/Rails/Tutorial/test/unit/user_test.rb	class UserTest 
 WebsiteTest	/home/jamie/Dropbox/Rails/Tutorial/test/unit/website_test.rb	class WebsiteTest 
 WebsitesControllerTest	/home/jamie/Dropbox/Rails/Tutorial/test/functional/websites_controller_test.rb	class WebsitesControllerTest 
 WebsitesHelper	/home/jamie/Dropbox/Rails/Tutorial/app/helpers/websites_helper.rb	module WebsitesHelper
 WebsitesHelperTest	/home/jamie/Dropbox/Rails/Tutorial/test/unit/helpers/websites_helper_test.rb	class WebsitesHelperTest 
 change	/home/jamie/Dropbox/Rails/Tutorial/db/migrate/20120112144835_create_tutorials.rb	  def change
 change	/home/jamie/Dropbox/Rails/Tutorial/db/migrate/20120112144854_create_subjects.rb	  def change
+change	/home/jamie/Dropbox/Rails/Tutorial/db/migrate/20120112163122_devise_create_users.rb	  def change
 create	/home/jamie/Dropbox/Rails/Tutorial/app/controllers/subjects_controller.rb	  def create
 create	/home/jamie/Dropbox/Rails/Tutorial/app/controllers/tutorials_controller.rb	  def create
 destroy	/home/jamie/Dropbox/Rails/Tutorial/app/controllers/subjects_controller.rb	  def destroy
