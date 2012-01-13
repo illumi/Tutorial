@@ -1,4 +1,10 @@
 Dissertation::Application.routes.draw do
+  resources :user_answers
+
+  resources :news_items
+
+  resources :questions
+
   devise_for :users
   as :user do
     get '/login' => "devise/sessions#new", :as => :new_user_session
@@ -8,7 +14,7 @@ Dissertation::Application.routes.draw do
 
   resources :tutorials
 
-  root :to => 'subjects#index'
+  root :to => 'news_items#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
