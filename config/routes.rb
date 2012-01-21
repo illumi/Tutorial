@@ -9,6 +9,10 @@ Dissertation::Application.routes.draw do
   as :user do
     get '/login' => "devise/sessions#new", :as => :new_user_session
   end
+  
+  devise_scope :user do
+    get "/logout" => "devise/sessions#destroy", :as => :destroy_user_session
+  end
 
   resources :subjects
 
