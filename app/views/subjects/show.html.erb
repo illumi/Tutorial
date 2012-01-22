@@ -1,33 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @subject.name %>
-</p>
+<h2> Available Tutorials for <%= @subject.name %></h2>
 
-<p>
-  <b>Description:</b>
-  <%= @subject.description %>
-</p>
+<p><%= @subject.description %> <%= link_to 'Edit subject', edit_subject_path(@subject) %></p>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class='tutorial-container' id ='tutorial-container'>
+
+<!-- add link to new tutorial for this subject.-->
+
 <% @subject.tutorials.each do |tutorial| %>
-  <tr>
-    <td><%= tutorial.name %></td>
-    <td><%= tutorial.description %></td>
-    <td><%= link_to 'Show', tutorial %></td>
-    <td><%= link_to 'Edit', edit_tutorial_path(tutorial) %></td>
-    <td><%= link_to 'Destroy', tutorial, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <ol class="tutorial-class">
+    <p class="tutorial-title">
+      <h3><%= link_to tutorial.name, tutorial%></h3>
+    </p>
+    <p class="tutorial-description">
+      <%= tutorial.description %>
+    </p>
+    <div class="tutorial-links">
+      <%= link_to 'Edit', edit_tutorial_path(tutorial) %>
+      <%= link_to 'Destroy', tutorial, confirm: 'Are you sure?', method: :delete %>
+    </div>
+  </ol>
 <% end %>
-</table>
 
-<%= link_to 'Edit', edit_subject_path(@subject) %> |
+</div>
+
 <%= link_to 'Back', subjects_path %>
