@@ -10,5 +10,24 @@
   <%= @subject.description %>
 </p>
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @subject.tutorials.each do |tutorial| %>
+  <tr>
+    <td><%= tutorial.name %></td>
+    <td><%= tutorial.description %></td>
+    <td><%= link_to 'Show', tutorial %></td>
+    <td><%= link_to 'Edit', edit_tutorial_path(tutorial) %></td>
+    <td><%= link_to 'Destroy', tutorial, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
 <%= link_to 'Edit', edit_subject_path(@subject) %> |
 <%= link_to 'Back', subjects_path %>
