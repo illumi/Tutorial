@@ -6,6 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+News_Item.create( #Eurgh problem with NewsItem/News_Item Model
+  :name => 'Welcome', 
+  :content => 'Welcome to Jamie\'s tutorial website. This website is in development and this news item is generated from the initial seed data. Please view the available Subjects and associated tutorials by using the nav bar above.'
+)
+
 users = []
 users << User.create(
       :email => 'jamiespence2@gmail.com', 
