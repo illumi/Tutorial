@@ -1,8 +1,6 @@
 Dissertation::Application.routes.draw do
   resources :user_answers
 
-  resources :news_items
-
   resources :questions
 
   devise_for :users
@@ -18,7 +16,7 @@ Dissertation::Application.routes.draw do
 
   resources :tutorials
 
-  root :to => 'news_items#index'
+  root :to => 'subjects#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

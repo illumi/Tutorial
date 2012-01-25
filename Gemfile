@@ -6,7 +6,9 @@ gem 'rails', '3.2.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'devise', '~> 2.0.0.rc'
+gem 'jquery-rails'
+gem 'skeleton-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -15,9 +17,6 @@ group :assets do
   gem 'coffee-rails', '>= 3.1.1'
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'devise', '~> 2.0.0.rc'
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
