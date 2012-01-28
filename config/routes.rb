@@ -9,7 +9,7 @@ Dissertation::Application.routes.draw do
   end
   
   devise_scope :user do
-    get "/logout" => "devise/sessions#destroy", :as => :destroy_user_session
+    get "/logout" => "devise/sessions#destroy"
   end
 
   resources :subjects

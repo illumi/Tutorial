@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Dissertation::Application.config.secret_token = '0cd361d0e216eb52dade39ab376805e5062a0dc16d57b6ee1c1dafdafa8323da0277fc243b1cfd36b55917a29565e7229a895bc601ae402188e7cc16beed6b00'
+Dissertation::Application.config.secret_token = '0c18c0a765529102294601e82c30c45e68dd4fb59684b4cf6a97f006a161fff78474cafdd78a9890157fbb864682d3762087b29231c6133a5d88bf7bd7d17756'

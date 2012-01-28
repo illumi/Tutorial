@@ -8,3 +8,18 @@
  *= require skeleton
  *= require_tree . 
 */
+
+header .login {
+  margin-left:0;
+  margin-right:20px;
+  float:right
+}
+header ul{margin:25px 0 0 0}
+header ul li{display:inline;color:#0079aa;margin-right:20px}
+header ul li a,header ul li a:visited,header ul li a:active{color:#0079aa;text-decoration:none}
+header ul li a.hover{text-decoration:underline}
+header nav {
+  margin-left:20px;
+  margin-right:0;
+  float:left
+}

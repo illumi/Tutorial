@@ -29,14 +29,8 @@ users << User.create(
 
 subjects = []
 subjects << Subject.create(
-  :name => 'Distributed and Parallel Technologies', 
-  :description => 'Includes tutorials on C+MPI and Glasgow Parallel Haskell'
-)
-
-Tutorial.create(
-  :name => 'C Revision', 
-  :description => 'Revision of the C programming language',
-  :subject_id => subjects.first.id
+  :name => 'Glasgow Parallel Haskell', 
+  :description => 'Tutorials GpH'
 )
 Tutorial.create(
   :name => 'GpH Introduction', 

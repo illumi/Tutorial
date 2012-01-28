@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <title>Dissertation</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+
+	<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>Tutorial</title>
+<meta name="description" content="Tutorial framework for learning Glasgow Parallel Haskell">
+<meta name="author" content="Jamie Spence">
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+	<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS
+ ================================================== -->
+<%= stylesheet_link_tag    "application" %>
+	<!-- JS
+================================================== -->
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
 </head>
 <body>
 
-<!-- Nav bar here?-->
-  
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
-<% unless current_user %>
-<%= link_to 'Login', new_user_session_path %> | <%= link_to 'Register', new_user_registration_path %>
-<% else %>
-<%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
-<% end %>
+	<!-- Primary Page Layout
+================================================== -->
 
-<%= yield %>
+<div class="container">
+  <header>
+	
+  <nav class="eight columns">
+    <ul>
+      <li><%= link_to 'Home', subjects_path %></li>
+    </ul>
+  </nav>
+    
+  <div class="login">
+	<ul>
+		<%= render 'devise/menu/registration_items' %>
+		<%= render 'devise/menu/login_items' %>
+	</ul> 
+  </div>
+</header>
 
+<div class="four columns>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+  <hr />
+</div>
+
+	<%= yield %>
+
+</div><!-- container -->
+	
+<!-- End Document 
+================================================== -->
 </body>
 </html>
