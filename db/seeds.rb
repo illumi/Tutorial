@@ -34,7 +34,7 @@ subjects << Subject.create(
 )
 Tutorial.create(
   :name => 'GpH Introduction', 
-  :description => 'Introduction to Glasgow Parallel Haskell',
+  :description => 'Introduction to Glasgow Parallel Haskell. This tutorial assumes previous knowlege of Haskell.'
   :subject_id => subjects.first.id
 )
 
