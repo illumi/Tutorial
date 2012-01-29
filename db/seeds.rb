@@ -6,11 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-#News_Item.create( #Eurgh problem with NewsItem/News_Item Model
-#  :name => 'Welcome', 
-#  :content => 'Welcome to Jamie\'s tutorial website. This website is in development and this news item is generated from the initial seed data. Please view the available Subjects and associated tutorials by using the nav bar above.'
-#)
-
 users = []
 users << User.create(
       :email => 'jamiespence2@gmail.com', 
@@ -26,15 +21,23 @@ users << User.create(
       :last_name => 'Shannon', 
       :admin => true
     )
+    
+Newsitem.create( #Eurgh problem with NewsItem/News_Item Model
+  :title => 'Welcome', 
+  :content => 'Welcome to Jamie\'s tutorial website. This website is in development and this news item is generated from the initial seed data. Please view the available Subjects and associated tutorials by using the nav bar above.',
+  :user_id => users.first.id
+)
 
 subjects = []
 subjects << Subject.create(
   :name => 'Glasgow Parallel Haskell', 
   :description => 'Tutorials GpH'
 )
+
 Tutorial.create(
   :name => 'GpH Introduction', 
-  :description => 'Introduction to Glasgow Parallel Haskell. This tutorial assumes previous knowlege of Haskell.'
+  :description => 'Introduction to Glasgow Parallel Haskell. This tutorial assumes previous knowlege of Haskell.',
+  :content => '',
   :subject_id => subjects.first.id
 )
 

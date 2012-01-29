@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   
   has_many :user_answers
+  has_many :newsitems
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
