@@ -7,7 +7,7 @@
 
 <p>
   <b>Content:</b>
-  <%= @newsitem.content %>
+  <%= raw(BBCodeizer.bbcodeize(@newsitem.content)) %>
 </p>
 
 <p>

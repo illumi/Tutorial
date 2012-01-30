@@ -7,13 +7,13 @@
 
 <p>
   <b>Description:</b>
-  <%= @tutorial.description %>
+  <%= raw(BBCodeizer.bbcodeize(@tutorial.description)) %>
 </p>
 
 <p>
   <b>Content:</b>
-  <%= @tutorial.content %>
+  <%= raw(BBCodeizer.bbcodeize(@tutorial.content)) %>
 </p>
 
 <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
-<%= link_to 'Back', tutorials_path %>
+<%= link_to 'Back', subjects_path %>
