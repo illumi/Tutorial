@@ -22,7 +22,7 @@ users << User.create(
       :admin => true
     )
     
-Newsitem.create( #Eurgh problem with NewsItem/News_Item Model
+Newsitem.create(
   :title => 'Welcome', 
   :content => 'Welcome to Jamie\'s tutorial website. This website is in development and this news item is generated from the initial seed data. Please view the available Subjects and associated tutorials by using the nav bar above.',
   :user_id => users.first.id
@@ -31,13 +31,24 @@ Newsitem.create( #Eurgh problem with NewsItem/News_Item Model
 subjects = []
 subjects << Subject.create(
   :name => 'Glasgow Parallel Haskell', 
-  :description => 'Tutorials GpH'
+  :description => 'These tutorials assume previous knowlege of Haskell. There are already some good resources for learning Haskell online so reading some of the following might be a good idea. [url="http://book.realworldhaskell.org/read/"]Real World Haskell[/url] is available freely and is also available to buy as a book.'
 )
 
 Tutorial.create(
   :name => 'GpH Introduction', 
-  :description => 'Introduction to Glasgow Parallel Haskell. This tutorial assumes previous knowlege of Haskell.',
+  :description => 'Introduction to Glasgow Parallel Haskell.',
   :content => '',
   :subject_id => subjects.first.id
 )
-
+Tutorial.create(
+  :name => 'Example tutorial 1', 
+  :description => 'Example tutorial description',
+  :content => '',
+  :subject_id => subjects.first.id
+)
+Tutorial.create(
+  :name => 'Example tutorial 2', 
+  :description => 'Example tutorial description',
+  :content => '',
+  :subject_id => subjects.first.id
+)

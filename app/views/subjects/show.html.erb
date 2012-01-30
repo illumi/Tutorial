@@ -1,4 +1,4 @@
-<div class="sixteen columns">
+<div class="twelve columns">
 
 <p id="notice"><%= notice %></p>
 
@@ -7,14 +7,14 @@
 <p><%= @subject.description %> <%= link_to 'Edit subject', edit_subject_path(@subject) %></p>
 
 <!-- add link to new tutorial for this subject.-->
-
+  <ol class="tutorial-group">
+    
 <% @subject.tutorials.each do |tutorial| %>
-  <ol class="tutorial-class">
-    <li class="tutorial-class-item">
+    <li class="tutorial-group-item">
       <p class="tutorial-title">
         <h3><%= link_to tutorial.name, tutorial%></h3>
       </p>
-      <p class="tutorial-description">
+      <p class="tutorial-desc">
         <%= tutorial.description %>
       </p>
       <div class="tutorial-links">
@@ -22,9 +22,10 @@
         <%= link_to 'Delete', tutorial, confirm: 'Are you sure?', method: :delete %>
       </div>
     </li>
-  </ol>
 <% end %>
 
+  </ol>
+  
 <%= link_to 'Back', subjects_path %>
 
 </div>

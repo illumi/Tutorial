@@ -12,14 +12,72 @@
 header .login {
   margin-left:0;
   margin-right:20px;
-  float:right
+  float:right;
 }
-header ul{margin:25px 0 0 0}
-header ul li{display:inline;color:#0079aa;margin-right:20px}
-header ul li a,header ul li a:visited,header ul li a:active{color:#0079aa;text-decoration:none}
-header ul li a.hover{text-decoration:underline}
+header ul{
+  margin:25px 0 0 0;
+}
+header ul li{
+  display:inline;
+  color:#0079aa;
+  margin-right:20px;
+}
+header ul li a,header ul li a:visited,header ul li a:active{
+  color:#0079aa;
+  text-decoration:none;
+}
+header ul li a.hover{
+  text-decoration:underline;
+}
 header nav {
   margin-left:20px;
   margin-right:0;
-  float:left
+  float:left;
+}
+
+.tutorial-group{
+  margin:15px 0 0 0;
+  padding:5px 8px;
+  font-size:13px;
+  color:#3a505b;
+  text-shadow:0 1px rgba(255,255,255,1.0);
+  background:#e6f1ff;
+  border:1px solid #c5d5dd;
+  list-style-type:none;
+  margin:0 0 15px 0;
+  border:1px solid #c5d5dd;
+}
+.tutorial-group-item {
+  position:relative;
+  padding:8px 8px 8px 52px;
+  border-top:1px solid #e2eaee;
+}
+.tutorial-group-item:first-child {
+  border-top:none;
+}
+.tutorial-group-item:last-child {}
+.tutorial-group-item:nth-child(2n+1) {
+  background:#fff;
+}
+.tutorial-group-item .tutorial-title {
+  margin:1px 0 1px 0;
+  font-size:14px;
+  font-weight:bold;
+  color:#333;
+}
+.tutorial-group-item .tutorial-title a {
+  color:#333;
+}
+.tutorial-group-item .tutorial-desc pre {
+  margin-top:5px;
+  margin-bottom:10px;
+  font-size:12px;
+  color:#596063;
+  border-left:1px solid #e5e5e5;
+  padding-left:8px;
+}
+.tutorial-group-item .tutorial-links {
+  position:absolute;
+  top:7px;
+  right:8px;
 }
