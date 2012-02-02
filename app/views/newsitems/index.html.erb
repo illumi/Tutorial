@@ -13,7 +13,7 @@
 <% @newsitems.each do |newsitem| %>
   <tr>
     <td><%= newsitem.title %></td>
-    <td><%= raw(BBCodeizer.bbcodeize(newsitem.content)) %></td>
+    <td><%= newsitem.content.markdown.html_safe %></td>
     <td><%= newsitem.user_id %></td>
     <td><%= link_to 'Show', newsitem %></td>
     <td><%= link_to 'Edit', edit_newsitem_path(newsitem) %></td>

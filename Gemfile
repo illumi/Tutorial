@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'jquery-rails'
 gem 'skeleton-rails'
-gem 'bbcodeizer'
+gem 'rdiscount'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,5 +33,5 @@ end
 
 group :test do
   # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
+  gem 'turn', '0.9.1', :require => false
 end

@@ -7,7 +7,7 @@
 
 <p>
   <b>Content:</b>
-  <%= raw(BBCodeizer.bbcodeize(@newsitem.content)) %>
+  <%= @newsitem.content.markdown.html_safe %>
 </p>
 
 <p>

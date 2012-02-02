@@ -4,4 +4,4 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 Dissertation::Application.initialize!
 
-require 'bbcodeizer'
+require 'rdiscount'
