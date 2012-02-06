@@ -1,9 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <div class="news">
   <%= @newsitem.title %>
   <%= @newsitem.user.first_name %>
-  <%= User.find(@newsitem.user_id).first_name %>
 
   <%= @newsitem.content.markdown.html_safe %>
 
