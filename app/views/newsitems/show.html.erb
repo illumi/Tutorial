@@ -1,20 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
+<div class="news">
   <%= @newsitem.title %>
-</p>
+  <%= @newsitem.user.first_name %>
+  <%= User.find(@newsitem.user_id).first_name %>
 
-<p>
-  <b>Content:</b>
   <%= @newsitem.content.markdown.html_safe %>
-</p>
 
-<p>
-  <b>Created By:</b>
-  <%= @newsitem.user_id %>
-</p>
+  <%= link_to 'Edit', edit_newsitem_path(@newsitem) %>
+</div>
 
-
-<%= link_to 'Edit', edit_newsitem_path(@newsitem) %> |
 <%= link_to 'Back', newsitems_path %>

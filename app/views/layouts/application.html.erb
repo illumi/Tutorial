@@ -37,19 +37,19 @@
 <div class="container">
   <header>
 	
-  <nav class="eight columns">
-    <ul>
-      <li><%= link_to 'Home', newsitems_path %></li>
-      <li><%= link_to 'Subjects', subjects_path %></li>
-    </ul>
-  </nav>
-
   <div class="login four columns">
 	<ul>
 		<%= render 'devise/menu/registration_items' %>
 		<%= render 'devise/menu/login_items' %>
 	</ul>
   </div>
+    
+  <nav class="eight columns">
+    <ul>
+      <li><%= link_to 'Home', newsitems_path %></li>
+      <li><%= link_to 'Subjects', subjects_path %></li>
+    </ul>
+  </nav>
 
   <hr />
 </header>
