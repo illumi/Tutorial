@@ -2,7 +2,7 @@
 
 <h2> Available Tutorials for <%= @subject.name %></h2>
 
-<p><%= @subject.description %> <%= link_to 'Edit subject', edit_subject_path(@subject) %></p>
+<p><%= @subject.description.markdown.html_safe %> <%= link_to 'Edit subject', edit_subject_path(@subject) %></p>
 
 <!-- add link to new tutorial for this subject.-->
   <ol class="tutorial-group">

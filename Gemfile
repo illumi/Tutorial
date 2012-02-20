@@ -2,21 +2,18 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
 gem 'devise'
 gem 'jquery-rails'
 gem 'skeleton-rails'
-gem 'rdiscount'
+gem 'rdiscount' #markdown
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.4'
-  gem 'coffee-rails', '>= 3.2.2'
-  gem 'uglifier', '>= 1.2.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 # To use ActiveModel has_secure_password
@@ -33,5 +30,5 @@ end
 
 group :test do
   # Pretty printed test output
-  gem 'turn', '0.9.1', :require => false
+  gem 'turn', :require => false
 end
