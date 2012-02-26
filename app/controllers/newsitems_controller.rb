@@ -2,7 +2,7 @@ class NewsitemsController < ApplicationController
   # GET /newsitems
   # GET /newsitems.json
   def index
-    @newsitems = Newsitem.all
+    @newsitems = Newsitem.all(:order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
