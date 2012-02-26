@@ -1,0 +1,7 @@
+<div class="news">
+  <h2><%= link_to newsitem.title, newsitem %></h2>
+  <div class="meta">
+    <%= newsitem.created_at.strftime("Created at %d/%m/%Y %H:%M by") %> <%= newsitem.user.first_name %> <div class="right"><%= link_to 'Edit', edit_newsitem_path(newsitem) %> | <%= link_to 'Delete', newsitem, confirm: 'Are you sure?', method: :delete %></div>
+  </div>
+  <%= newsitem.content.markdown.html_safe %>
+</div>

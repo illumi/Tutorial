@@ -31,7 +31,7 @@ Newsitem.create(
 subjects = []
 subjects << Subject.create(
   :name => 'Glasgow Parallel Haskell', 
-  :description => 'These tutorials assume previous knowlege of Haskell. There are already some good resources for learning Haskell online so reading some of the following might be a good idea. [url=http://book.realworldhaskell.org/read/]Real World Haskell[/url] is available freely and is also available to buy as a book.'
+  :description => 'These tutorials assume previous knowlege of Haskell. There are already some good resources for learning Haskell online so reading some of the following might be a good idea. [Real World Haskell](http://book.realworldhaskell.org/read/) is available freely and is also available to buy as a book.'
 )
 
 Tutorial.create(

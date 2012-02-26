@@ -1,10 +1,7 @@
-<div class="news">
-  <%= @newsitem.title %>
-  <%= @newsitem.user.first_name %>
+<div class="twelve columns">
+  
+  <%= render @newsitem %>
 
-  <%= @newsitem.content.markdown.html_safe %>
+  <%= link_to 'Back', newsitems_path %>
 
-  <%= link_to 'Edit', edit_newsitem_path(@newsitem) %>
 </div>
-
-<%= link_to 'Back', newsitems_path %>

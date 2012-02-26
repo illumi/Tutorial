@@ -91,3 +91,6 @@ header nav {
 	padding-bottom: 50px;
 	border-bottom: none;
 }
+.right {
+  float:right;
+}

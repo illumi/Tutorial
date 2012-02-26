@@ -37,3 +37,20 @@ pre {
   font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, Monospace, serif;
   background-color:#eeeeee;
 }
+
+.news {
+	clear: left;
+	margin: 30px 0;
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #d5d5d5;
+}
+.news:last-child {
+	padding-bottom: 50px;
+	border-bottom: none;
+}
+.meta {
+	color: #6B6967;
+	margin: 16px 0 0;
+	font: normal 14px/1.4em Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  padding-bottom: 20px;
+}
