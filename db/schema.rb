@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120129162138) do
+ActiveRecord::Schema.define(:version => 20120227212829) do
 
   create_table "newsitems", :force => true do |t|
     t.string   "title"
@@ -26,23 +26,23 @@ ActiveRecord::Schema.define(:version => 20120129162138) do
     t.string   "answer"
     t.string   "hint"
     t.integer  "tutorial_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "subjects", :force => true do |t|
     t.string   "name"
-    t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "tutorials", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "subject_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.text     "content"
   end
 
@@ -50,8 +50,8 @@ ActiveRecord::Schema.define(:version => 20120129162138) do
     t.string   "answer"
     t.integer  "question_id"
     t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -65,8 +65,8 @@ ActiveRecord::Schema.define(:version => 20120129162138) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
     t.boolean  "admin",                  :default => false
     t.string   "first_name"
     t.string   "last_name"
