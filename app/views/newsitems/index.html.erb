@@ -1,7 +1,7 @@
-<%= link_to 'New Newsitem', new_newsitem_path %>
-
 <div class="twelve columns">
 
+  <%= link_to 'New Newsitem', new_newsitem_path %>
+  
 <% for newsitem in @newsitems %>
   <%= render newsitem %>
 <% end %>

@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-gem 'sqlite3'
+gem 'pg'
 gem 'devise'
 gem 'jquery-rails'
 gem 'skeleton-rails'
@@ -31,4 +31,7 @@ end
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+end
+group :production do
+  gem 'thin'
 end

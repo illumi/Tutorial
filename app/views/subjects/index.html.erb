@@ -1,29 +1,20 @@
-<div class="sixteen columns">
-
-<h1 class="remove-bottom" style="margin-top: 40px">Listing subjects</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @subjects.each do |subject| %>
-  <tr>
-    <td><%= subject.name %></td>
-    <td><%= subject.description.markdown.html_safe %></td>
-    <td><%= link_to 'Show', subject %></td>
-    <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
-    <td><%= link_to 'Delete', subject, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
+<div class="twelve columns">
 
 <%= link_to 'New Subject', new_subject_path %>
+  
+<% for subject in @subjects %>
+
+<div class="news">
+  <h2><%= link_to subject.name, subject %></h2>
+  <div class="meta right">
+    <%= link_to 'Edit', edit_subject_path(subject) %> | <%= link_to 'Delete', subject, confirm: 'Are you sure?', method: :delete %> 
+  </div>
+  
+    <%= subject.description.markdown.html_safe %>
+   
+    There are currently <%= subject.tutorials.count %> tutorials for this subject.
+</div>
+
+<% end %>
 
 </div>

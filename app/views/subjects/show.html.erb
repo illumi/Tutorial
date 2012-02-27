@@ -4,7 +4,9 @@
 
 <p><%= @subject.description.markdown.html_safe %> <%= link_to 'Edit subject', edit_subject_path(@subject) %></p>
 
-<!-- add link to new tutorial for this subject.-->
+<!-- add link to new tutorial for current subject.-->
+<%= link_to 'New Tutorial', new_tutorial_path %>
+
   <ol class="tutorial-group">
     
 <% @subject.tutorials.each do |tutorial| %>

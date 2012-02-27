@@ -41,14 +41,20 @@ Tutorial.create(
   :subject_id => subjects.first.id
 )
 Tutorial.create(
-  :name => 'Example tutorial 1', 
-  :description => 'Example tutorial description',
+  :name => 'Normal Forms', 
+  :description => 'Introduction to normal forms',
   :content => '',
   :subject_id => subjects.first.id
 )
 Tutorial.create(
-  :name => 'Example tutorial 2', 
-  :description => 'Example tutorial description',
+  :name => 'Introducing parallelism', 
+  :description => 'Your first GpH program!',
+  :content => '',
+  :subject_id => subjects.first.id
+)
+Tutorial.create(
+  :name => 'Evaluation Strategies', 
+  :description => 'Separating Computation and Coordination ',
   :content => '',
   :subject_id => subjects.first.id
 )
