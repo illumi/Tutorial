@@ -9,23 +9,3 @@
 //= require tabs
 //= require_tree .
 
-function styleCode() //dynamically add prettyprint class to each <pre> in DOM
-{
-    if (typeof disableStyleCode != "undefined") 
-    {
-        return;
-    }
-
-    var a = false;
-
-    $("pre code").parent().each(function() 
-    {
-        if (!$(this).hasClass("prettyprint")) 
-        {
-            $(this).addClass("prettyprint");
-            a = true
-        }
-    });
-    
-    if (a) { prettyPrint() } 
-}
