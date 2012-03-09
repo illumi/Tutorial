@@ -29,9 +29,11 @@ end
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
-  # Pretty printed test output
   gem 'turn', :require => false
 end
 group :production do
   gem 'thin'
+end
+group :development, :test do
+    gem 'railroady'
 end

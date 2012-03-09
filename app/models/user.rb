@@ -11,4 +11,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :admin
 
 
+  def admin?
+    self.admin == true
+  end
 end
