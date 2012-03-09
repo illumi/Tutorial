@@ -2,7 +2,7 @@ class TutorialsController < ApplicationController
   # GET /tutorials
   # GET /tutorials.json
   def index
-    @tutorials = Tutorial.all
+    @tutorials = Tutorial.all(:order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
