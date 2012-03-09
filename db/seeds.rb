@@ -89,8 +89,8 @@ Tutorial.create(
 	pfact\' :: Integer -> Integer -> Integer
 	pfact\' m n
 		| m == n = m
-		| otherwise = left ‘par‘ right ‘pseq‘ (left * right)
-			where mid = (m + n) ‘div‘ 2
+		| otherwise = left `par` right `pseq` (left * right)
+			where mid = (m + n) `div` 2
 			left = pfact\' m mid
 			right = pfact\' (mid+1) n
 
