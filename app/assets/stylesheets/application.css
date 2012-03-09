@@ -94,3 +94,9 @@ header nav {
 .right {
   float:right;
 }
+code {
+  margin-bottom:30px;
+}
+footer {
+  margin-bottom:50px;
+}

@@ -103,9 +103,9 @@ Another example of a divide and conquer algorithm is a Fibonacci function. We wi
 Sequential Version:
 
 	nfib :: Int -> Int
-	nfib 0 = 1
+	nfib 0 = 0
 	nfib 1 = 1
-	nfib n = nf1+nf2+1
+	nfib n = nf1+nf2
          where nf1  = nfib (n-1)
                nf2  = nfib (n-2)
 
@@ -114,9 +114,9 @@ Here we see that `nf1` and `nf2` are recursively calling the `nfib` function.
 Parallel version:
 
 	parfib :: Int -> Int
-	parfib 0 = 1
+	parfib 0 = 0
 	parfib 1 = 1
-	parfib n = nf2 `par` nf1 `pseq` (nf1+nf2+1)
+	parfib n = nf2 `par` nf1 `pseq` (nf1+nf2)
 		where nf1 = parfib (n-1)
 			  nf2 = parfib (n-2) 
 
