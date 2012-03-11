@@ -1,4 +1,7 @@
 class TutorialsController < ApplicationController
+  
+  before_filter :verify_is_admin, :only => [:new, :create, :update, :destroy]
+  
   # GET /tutorials
   # GET /tutorials.json
   def index

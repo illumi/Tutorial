@@ -44,7 +44,7 @@ GpH does not explicitly deal with synchronisation or communication but GpH provi
 
     x `par` y => y
 
-The par combinator takes two arguments that are to be evaluated in parallel and suggests parallel computation can take place. the behaviour of par is to indicate that x could be evaluated by a new parallel thread, with the parent thread continuing evaluation of y. `x` gets **sparked** where a new thread is subsequently created to evaluate `x` if a processor becomes idle.
+The par combinator takes two arguments that are to be evaluated in parallel and suggests parallel computation can take place. the behaviour of par is to indicate that an expression x can be evaluated by a new parallel thread, with the parent thread continuing evaluation of an expression y. `x` gets **sparked** where a new thread is subsequently created to evaluate `x` if a processor becomes idle.
 
     x `pseq` y => y
 

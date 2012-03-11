@@ -1,7 +1,7 @@
 class SubjectsController < ApplicationController
   
-  before_filter :authenticate_user!, :only => [:new, :create, :update, :destroy]
-  
+  before_filter :verify_is_admin, :only => [:new, :create, :update, :destroy]
+
   # GET /subjects
   # GET /subjects.json
   def index
