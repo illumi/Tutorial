@@ -36,6 +36,7 @@ pre {
   padding:5px;
   font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, Monospace, serif;
   background-color:#eeeeee;
+  margin-bottom: 20px;
 }
 
 .news {
@@ -53,4 +54,7 @@ pre {
 	margin: 16px 0 0;
 	font: normal 14px/1.4em Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   padding-bottom: 20px;
+}
+.container {
+  margin-bottom: 80px;
 }

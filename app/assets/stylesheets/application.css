@@ -35,38 +35,85 @@ header nav {
   float:left;
 }
 
+.listimage {
+    height: 35px;
+    width: 35px;
+}
+
+table.t {
+    width: 100%;
+}
+
+table.t.td.links {
+    width: 80px;
+}
+
+table.t td.tutor-links {
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+table.t tr.heen {
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    background: #FBFBFB
+}
+
+table.t tr.heenhover {
+    border: 1px solid #000000;
+    background: #D1E5E5
+}
+
+table.t tr.jaam:nth-child(even) {
+    background: #EFEFEF
+}
+table.t tr.jaam:nth-child(odd) {
+    background: #FBFBFB
+}
+
+table.t tr.jaamhover:nth-child(even) {
+    border: 1px solid #000000;
+    background: #C1D5DD
+}
+table.t tr.jaamhover:nth-child(odd) {
+    border: 1px solid #000000;
+    background: #D1E5E5
+}
+
+.tutorial-links {
+    margin-right: 0px;
+    margin-left: -100px;
+    border: 0px solid #cccccc;
+}
+
 .tutorial-group{
-  margin:15px 0 0 0;
-  padding:5px 8px;
+  padding-top: 0px;
   font-size:13px;
   color:#3a505b;
   text-shadow:0 1px rgba(255,255,255,1.0);
   background:#e6f1ff;
+  background:#00f1ff;
   border:1px solid #c5d5dd;
   list-style-type:none;
-  margin:0 0 15px 0;
+  margin:0px 0px 0px 0px;
   border:1px solid #c5d5dd;
 }
 .tutorial-group-item {
   position:relative;
-  padding:8px 8px 8px 52px;
+  padding-top: 5px;
+  padding-left: 15px;
   border-top:1px solid #e2eaee;
 }
-.tutorial-group-item:first-child {
-  border-top:none;
+
+.tutorial-title {
+  margin-left: 2px;
+  margin-bottom: 3px;
+  font-size:29px;
+  font-weight:normal;
+  color:#333333;
 }
-.tutorial-group-item:last-child {}
-.tutorial-group-item:nth-child(2n+1) {
-  background:#fff;
-}
-.tutorial-group-item .tutorial-title {
-  margin:1px 0 1px 0;
-  font-size:14px;
-  font-weight:bold;
-  color:#333;
-}
-.tutorial-group-item .tutorial-title a {
-  color:#333;
+.tutorial-title a {
+  color:#333333;
 }
 .tutorial-group-item .tutorial-desc pre {
   margin-top:5px;
@@ -76,27 +123,13 @@ header nav {
   border-left:1px solid #e5e5e5;
   padding-left:8px;
 }
-.tutorial-group-item .tutorial-links {
-  position:absolute;
-  top:7px;
-  right:8px;
-}
 .item {
 	clear: left;
 	margin: 30px 0;
 	padding-bottom: 30px;
 	border-bottom: 1px dotted #d5d5d5;
 }
-.item:last-child {
-	padding-bottom: 50px;
-	border-bottom: none;
-}
+
 .right {
   float:right;
-}
-code {
-  padding-bottom:30px;
-}
-footer {
-  padding-bottom:50px;
 }
